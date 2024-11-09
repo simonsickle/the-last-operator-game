@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dbfn4evvrxqnw"]
+[gd_scene load_steps=7 format=3 uid="uid://dbfn4evvrxqnw"]
 
 [ext_resource type="Script" path="res://new_game/beginning.gd" id="1_r1lb7"]
 [ext_resource type="AnimationLibrary" uid="uid://buivvq5utme4d" path="res://new_game/animations/beginning_animation_library.res" id="2_jscmb"]
 [ext_resource type="AudioStream" uid="uid://bfnidfsj32yjm" path="res://sound_effects/tinnitus.wav" id="2_uxt3p"]
+[ext_resource type="PackedScene" uid="uid://ctxiq1tw51xdu" path="res://player/player.tscn" id="4_flhth"]
 
 [sub_resource type="Animation" id="Animation_embyt"]
 length = 0.001
@@ -61,3 +62,5 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 offset_right = 40.0
 offset_bottom = 40.0
+
+[node name="CharacterBody" parent="." instance=ExtResource("4_flhth")]
